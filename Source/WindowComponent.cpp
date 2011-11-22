@@ -411,6 +411,8 @@ void WindowComponent::readXMLFrame(String xmlFile, Label* labelOne, LayoutLabel*
                 Font lucidiaGrande("Verdana", 15.0f, 0);
                 Range<int> textRange3(301, e->getAllSubText().length());
                 as1->setFont(textRange3, lucidiaGrande);
+                as1->setJustification(Justification::right);
+                //as1->setReadingDirection(AttributedString::rightToLeft);
                 if ((counter > 13) && (counter < 19)) as1->setReadingDirection(AttributedString::rightToLeft);
                 labelOne->setText (e->getAllSubText(), false);
                 labelTwo->setAttributedText (as1, false);
