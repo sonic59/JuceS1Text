@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{03655D98-CA0C-686C-8449-53B7857B41C6}") = "JuceS1Text", "JuceS1Text.vcproj", "{12D34042-A78E-20E7-8FB3-573147B354B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D34042-A78E-20E7-8FB3-573147B354B8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12D34042-A78E-20E7-8FB3-573147B354B8}.Debug|Win32.Build.0 = Debug|Win32
+		{12D34042-A78E-20E7-8FB3-573147B354B8}.Release|Win32.ActiveCfg = Release|Win32
+		{12D34042-A78E-20E7-8FB3-573147B354B8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
