@@ -47,7 +47,7 @@ public:
     //==============================================================================
     //[UserMethods]     -- You can add your own custom methods in this section.
     void readXMLLayout(String xmlFile, Label* labelOne, LayoutLabel* labelTwo);
-    void readXMLFrame(String xmlFile, Label* labelOne, FrameLabel* labelTwo);
+    void readXMLFrame(String xmlFile, Label* labelOne, LayoutLabel* labelTwo);
     //[/UserMethods]
 
     void paint (Graphics& g);
@@ -80,7 +80,7 @@ private:
     LayoutLabel* lblTE2Long;
     Label* lblte13;
     Label* lblTE1Multi;
-    FrameLabel* lblTE2Multi;
+    LayoutLabel* lblTE2Multi;
     Label* lblte23;
     TextButton* tbSix;
     TextButton* tbSeven;

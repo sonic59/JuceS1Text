@@ -154,7 +154,7 @@ WindowComponent::WindowComponent ()
     lblTE1Multi->setColour (TextEditor::textColourId, Colours::black);
     lblTE1Multi->setColour (TextEditor::backgroundColourId, Colour (0x0));
 
-    addAndMakeVisible (lblTE2Multi = new FrameLabel (L"te2 multi",
+    addAndMakeVisible (lblTE2Multi = new LayoutLabel (L"te2 multi",
                                                 L"Multi Line Text"));
     lblTE2Multi->setFont (Font (15.0000f, Font::plain));
     lblTE2Multi->setJustificationType (Justification::centredLeft);
@@ -381,7 +381,7 @@ void WindowComponent::readXMLLayout(String xmlFile, Label* labelOne, LayoutLabel
     }
 }
 
-void WindowComponent::readXMLFrame(String xmlFile, Label* labelOne, FrameLabel* labelTwo)
+void WindowComponent::readXMLFrame(String xmlFile, Label* labelOne, LayoutLabel* labelTwo)
 {
     String xmlPath = File::getSpecialLocation(File::userHomeDirectory).getFullPathName();
     xmlPath += "/Projects/JulesText/SampleText/";
@@ -389,10 +389,6 @@ void WindowComponent::readXMLFrame(String xmlFile, Label* labelOne, FrameLabel* 
     ScopedPointer<XmlElement> xml (myDocument.getDocumentElement());
     if (xml != nullptr && xml->hasTagName ("textarray"))
     {
-        String p1;
-        String p2;
-        AttributedString* as1 = new AttributedString();
-        AttributedString* as2 = new AttributedString();
         int subCounter = 0;
         forEachXmlChildElement (*xml, e)
         {
@@ -403,51 +399,28 @@ void WindowComponent::readXMLFrame(String xmlFile, Label* labelOne, FrameLabel* 
             }
             if (e->hasTagName ("text"))
             {
-                if (counter % 2 == 0)
-                {
-                    p1 = e->getAllSubText();
-                    as1->setText(e->getAllSubText());
-                    Range<int> textRange1(100, 200);
-                    as1->setColour(textRange1, Colours::blue);
-                    //Font times("Times", 14.0f, 0);
-                    Font times("Times New Roman", 14.0f, 0);
-                    Range<int> textRange2(0, 301);
-                    as1->setFont(textRange2, times);
-                    //Font lucidiaGrande("Lucidia Grande", 15.0f, 0);
-                    Font lucidiaGrande("Verdana", 15.0f, 0);
-                    Range<int> textRange3(301, e->getAllSubText().length());
-                    as1->setFont(textRange3, lucidiaGrande);
-                    if ((counter > 13) && (counter < 19)) as1->setReadingDirection(AttributedString::rightToLeft);
-                    counter++;
-                    continue;
-                }
-                else
-                {
-                    p2 = e->getAllSubText();
-                    labelOne->setText (p1 + "\n\n" + p2, false);
-                    as2->setText(e->getAllSubText());
-                    //Font lucidiaGrande("Lucidia Grande", 15.0f, 0);
-                    Font lucidiaGrande("Verdana", 15.0f, 0);
-                    Range<int> textRange4(0, e->getAllSubText().length());
-                    as2->setFont(textRange4, lucidiaGrande);
-                    as2->setJustification(Justification::right);
-                    if ((counter > 13) && (counter < 19)) as2->setReadingDirection(AttributedString::rightToLeft);
-                    ScopedPointer<OwnedArray<AttributedString> > asa;
-                    asa = new OwnedArray<AttributedString>();
-                    asa->add(as1);
-                    asa->add(new AttributedString());
-                    asa->add(as2);
-                    labelTwo->setParagraphs (asa, false);
-                    counter++;
-                    break;
-                }
+                ScopedPointer<AttributedString> as1;
+                as1 = new AttributedString(e->getAllSubText());
+                Range<int> textRange1(100, 200);
+                as1->setColour(textRange1, Colours::blue);
+                //Font times("Times", 14.0f, 0);
+                Font times("Times New Roman", 14.0f, 0);
+                Range<int> textRange2(0, 301);
+                as1->setFont(textRange2, times);
+                //Font lucidiaGrande("Lucidia Grande", 15.0f, 0);
+                Font lucidiaGrande("Verdana", 15.0f, 0);
+                Range<int> textRange3(301, e->getAllSubText().length());
+                as1->setFont(textRange3, lucidiaGrande);
+                if ((counter > 13) && (counter < 19)) as1->setReadingDirection(AttributedString::rightToLeft);
+                labelOne->setText (e->getAllSubText(), false);
+                labelTwo->setAttributedText (as1, false);
+                counter += 2;
+                break;
             }
         }
         if (subCounter == counter)
         {
             counter = 0;
-            delete as1;
-            delete as2;
         }
     }
 }
