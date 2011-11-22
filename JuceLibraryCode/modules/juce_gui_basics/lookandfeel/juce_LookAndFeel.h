@@ -57,6 +57,8 @@ class ImageButton;
 class CallOutBox;
 class Drawable;
 class CaretComponent;
+class LayoutLabel;
+class FrameLabel;
 
 //==============================================================================
 /**
@@ -402,6 +404,10 @@ public:
 
     //==============================================================================
     virtual void drawLabel (Graphics& g, Label& label);
+    
+    virtual void drawLayoutLabel (Graphics& g, LayoutLabel& layoutLabel);
+    
+    virtual void drawFrameLabel (Graphics& g, FrameLabel& frameLabel);
 
     //==============================================================================
     virtual void drawLinearSlider (Graphics& g,

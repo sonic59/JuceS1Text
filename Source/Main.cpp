@@ -9,6 +9,7 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "MainWindow.h"
 
 
 //==============================================================================
@@ -28,13 +29,13 @@ public:
     void initialise (const String& commandLine)
     {
         // Do your application's initialisation code here..
-        
+        mainWindow = new MainAppWindow();
     }
 
     void shutdown()
     {
         // Do your application's shutdown code here..
-        
+        mainWindow = 0;
     }
 
     //==============================================================================
@@ -65,7 +66,7 @@ public:
     }
 
 private:
-    
+    ScopedPointer <MainAppWindow> mainWindow;
 };
 
 //==============================================================================
