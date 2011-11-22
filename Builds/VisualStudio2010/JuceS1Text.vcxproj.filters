@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="JuceS1Text">
@@ -373,21 +372,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_linux_Threads.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Files.mm">
-      <Filter>Juce Modules\juce_core\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Network.mm">
-      <Filter>Juce Modules\juce_core\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Strings.mm">
-      <Filter>Juce Modules\juce_core\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_SystemStats.mm">
-      <Filter>Juce Modules\juce_core\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_mac_Threads.mm">
-      <Filter>Juce Modules\juce_core\native</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_posix_NamedPipe.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
@@ -406,9 +390,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\native\juce_win32_Threads.cpp">
       <Filter>Juce Modules\juce_core\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\juce_module_info">
-      <Filter>Juce Modules\juce_core</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_data_structures\values\juce_Value.cpp">
       <Filter>Juce Modules\juce_data_structures\values</Filter>
     </ClCompile>
@@ -423,9 +404,6 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_data_structures\app_properties\juce_PropertiesFile.cpp">
       <Filter>Juce Modules\juce_data_structures\app_properties</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_data_structures\juce_module_info">
-      <Filter>Juce Modules\juce_data_structures</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\messages\juce_ApplicationBase.cpp">
       <Filter>Juce Modules\juce_events\messages</Filter>
@@ -463,20 +441,11 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_android_Messaging.cpp">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_ios_MessageManager.mm">
-      <Filter>Juce Modules\juce_events\native</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_linux_Messaging.cpp">
-      <Filter>Juce Modules\juce_events\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_mac_MessageManager.mm">
       <Filter>Juce Modules\juce_events\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\native\juce_win32_Messaging.cpp">
       <Filter>Juce Modules\juce_events\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_events\juce_module_info">
-      <Filter>Juce Modules\juce_events</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\colour\juce_Colour.cpp">
       <Filter>Juce Modules\juce_graphics\colour</Filter>
@@ -577,12 +546,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_linux_Fonts.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_mac_CoreGraphicsContext.mm">
-      <Filter>Juce Modules\juce_graphics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_mac_Fonts.mm">
-      <Filter>Juce Modules\juce_graphics\native</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_win32_Direct2DGraphicsContext.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
     </ClCompile>
@@ -594,9 +557,6 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\native\juce_win32_Fonts.cpp">
       <Filter>Juce Modules\juce_graphics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_graphics\juce_module_info">
-      <Filter>Juce Modules\juce_graphics</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\components\juce_Component.cpp">
       <Filter>Juce Modules\juce_gui_basics\components</Filter>
@@ -925,12 +885,6 @@
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_android_Windowing.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_ios_UIViewComponentPeer.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_ios_Windowing.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_linux_Clipboard.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
@@ -938,21 +892,6 @@
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_linux_Windowing.cpp">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_FileChooser.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_MainMenu.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_MouseCursor.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_NSViewComponentPeer.mm">
-      <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_mac_Windowing.mm">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_win32_DragAndDrop.cpp">
@@ -963,9 +902,6 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\native\juce_win32_Windowing.cpp">
       <Filter>Juce Modules\juce_gui_basics\native</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\juce_module_info">
-      <Filter>Juce Modules\juce_gui_basics</Filter>
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_core\juce_core.cpp">
       <Filter>Juce Library Code</Filter>
@@ -981,6 +917,18 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\juce_gui_basics.cpp">
       <Filter>Juce Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MainWindow.cpp">
+      <Filter>JuceS1Text\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\WindowComponent.cpp">
+      <Filter>JuceS1Text\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\widgets\juce_FrameLabel.cpp">
+      <Filter>Juce Modules\juce_gui_basics\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\modules\juce_gui_basics\widgets\juce_LayoutLabel.cpp">
+      <Filter>Juce Modules\juce_gui_basics\widgets</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1856,6 +1804,18 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MainWindow.h">
+      <Filter>JuceS1Text\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\WindowComponent.h">
+      <Filter>JuceS1Text\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\widgets\juce_FrameLabel.h">
+      <Filter>Juce Modules\juce_gui_basics\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\modules\juce_gui_basics\widgets\juce_LayoutLabel.h">
+      <Filter>Juce Modules\juce_gui_basics\widgets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
